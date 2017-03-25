@@ -7,17 +7,7 @@ public class TrailController : MonoBehaviour {
     public float SlowestSpeed;
 
     private Trail _trailPrefab;
-    private Trail[] _trails;
-
-    private float SpeedDifference
-    {
-        get { return FastestSpeed - SlowestSpeed; }
-    }
-
-    private float StepDifference
-    {
-        get { return SpeedDifference / (TrailCount - 1); }
-    }
+    private TrailGroup _trailGroup;
 
     private static bool IsFollowing
     {
@@ -45,26 +35,19 @@ public class TrailController : MonoBehaviour {
         {
             var followPos = FollowPos;
 
-            if (_trails == null)
-                InitTrails(followPos);
+            if (!_trailGroup)
+                InitTrailGroup(followPos);
 
-            foreach (var trail in _trails)
-                trail.Follow.FollowPos = followPos;
+            _trailGroup.FollowPos = FollowPos;
         }
         else
-            _trails = null;
+            _trailGroup = null;
     }
 
-    private void InitTrails(Vector3 startPos)
+    private void InitTrailGroup(Vector3 startPos)
     {
-        _trails = new Trail[TrailCount];
+        _trailGroup = new GameObject("TrailGroup").AddComponent<TrailGroup>();
 
-        for (var i = 0; i < TrailCount; i++)
-        {
-            var trail = Instantiate(_trailPrefab, startPos, Quaternion.identity);
-            trail.Follow.Speed = FastestSpeed - StepDifference * i;
-
-            _trails[i] = trail;
-        }
+        _trailGroup.Init(_trailPrefab, startPos, TrailCount, FastestSpeed, SlowestSpeed);
     }
 }

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 7755e07f7722940de9421702bab2b2c6
+timeCreated: 1490462466
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Museo Slab
+  fontNames:
+  - Museo Slab
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
