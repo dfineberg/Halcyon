@@ -6,7 +6,7 @@ using UnityEngine;
 public class Trail : MonoBehaviour
 {
     public TrailRenderer TrailRenderer { get; private set; }
-    public Follow Follow { get; private set; }
+    public Follow Mover { get; private set; }
 
     public bool HasColliders;
 
@@ -24,7 +24,7 @@ public class Trail : MonoBehaviour
     private void Awake()
     {
         TrailRenderer = GetComponent<TrailRenderer>();
-        Follow = GetComponent<Follow>();
+        Mover = GetComponent<Follow>();
     }
 
     public void AddColliders()

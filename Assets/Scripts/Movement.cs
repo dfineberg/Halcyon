@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Mover : MonoBehaviour
+public class Movement : MonoBehaviour
 {
     public Vector3 MoveDirection;
 

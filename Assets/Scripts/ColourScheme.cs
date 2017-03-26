@@ -17,6 +17,7 @@ public class ColourScheme : MonoBehaviour
     public Colours[] ColourSchemes;
 
     [Space] public Image Gradient;
+    public Text TitleText;
     public Material[] ForegroundMaterials;
 
     private void Start()
@@ -31,6 +32,7 @@ public class ColourScheme : MonoBehaviour
     {
         Camera.main.backgroundColor = colourScheme.Background;
         Gradient.color = colourScheme.Background;
+        TitleText.color = colourScheme.Foreground;
 
         foreach (var mat in ForegroundMaterials)
             mat.color = colourScheme.Foreground;

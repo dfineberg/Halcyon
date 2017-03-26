@@ -24,7 +24,7 @@ public class TrailGroup : MonoBehaviour
         for (var i = 0; i < trailCount; i++)
         {
             var trail = Instantiate(prefab, startPos, Quaternion.identity);
-            trail.Follow.Speed = fastestSpeed - stepDifference * i;
+            trail.Mover.Speed = fastestSpeed - stepDifference * i;
             trail.transform.SetParent(transform);
 
             _trails[i] = trail;
@@ -43,7 +43,7 @@ public class TrailGroup : MonoBehaviour
             return;
 
         foreach (var trail in _trails)
-            trail.Follow.FollowPos = FollowPos;
+            trail.Mover.FollowPos = FollowPos;
 
         for (var i = 0; i < _trails.Length; i++)
             _points[i] = _trails[i].transform.localPosition;
