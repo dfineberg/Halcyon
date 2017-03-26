@@ -227,6 +227,57 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112979669}
+--- !u!1 &254596302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 254596304}
+  - component: {fileID: 254596303}
+  m_Layer: 0
+  m_Name: ColourScheme
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &254596303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 254596302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c5b3d695f864e6cbf99cc40572dcea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ColourSchemeNo: 0
+  RandomiseOnStart: 1
+  ColourSchemes:
+  - Background: {r: 0.9137255, g: 0.8784314, b: 0.67058825, a: 1}
+    Foreground: {r: 1, g: 0.4117647, b: 0.3529412, a: 1}
+  - Background: {r: 0.345368, g: 0.7155297, b: 0.91335595, a: 1}
+    Foreground: {r: 0.9869406, g: 0.18548496, b: 0.028562771, a: 1}
+  Gradient: {fileID: 473475319}
+  ForegroundMaterials:
+  - {fileID: 2100000, guid: ad8860ececfe74109b8ab4fd6baf617f, type: 2}
+  - {fileID: 2100000, guid: db4cee9b012644162bc3094807d28c09, type: 2}
+--- !u!4 &254596304
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 254596302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.0584493, y: -1.1835871, z: -4.4250355}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &389097012
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +388,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 376769775
+  randomSeed: 1583717713
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5812,7 +5863,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.9137255, g: 0.8784314, b: 0.67058825, a: 0}
+  m_BackGroundColor: {r: 0.9137255, g: 0.8784314, b: 0.67058825, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0

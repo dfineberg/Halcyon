@@ -68,7 +68,7 @@ public class TrailRendererWith2DCollider : MonoBehaviour {
 
     private void Awake() {
         //create an object and mesh for the trail
-        GameObject trail = new GameObject("Trail", new[] { typeof(MeshRenderer), typeof(MeshFilter), typeof(PolygonCollider2D) } );
+        GameObject trail = new GameObject("ForegroundMaterials", new[] { typeof(MeshRenderer), typeof(MeshFilter), typeof(PolygonCollider2D) } );
         mesh = trail.GetComponent<MeshFilter>().mesh = new Mesh();
         renderer = trail.GetComponent<Renderer>();
         renderer.material = trailMaterial;
