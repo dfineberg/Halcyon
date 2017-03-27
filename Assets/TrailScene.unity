@@ -2854,10 +2854,10 @@ RectTransform:
   m_Father: {fileID: 1989562039}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 389, y: 895}
-  m_SizeDelta: {x: 706, y: 199}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1, y: -136}
+  m_SizeDelta: {x: -49, y: 101}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &112979671
 MonoBehaviour:
@@ -2880,7 +2880,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 6ccde120368ef49ffbd6aecc35534360, type: 3}
-    m_FontSize: 100
+    m_FontSize: 62
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2909,7 +2909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed692e1dc562f44b5b8493aa40eb2a07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveDirection: {x: 0, y: 50, z: 0}
+  MoveDirection: {x: 0, y: 46, z: 0}
 --- !u!1 &254596302
 GameObject:
   m_ObjectHideFlags: 0
@@ -16650,6 +16650,7 @@ MonoBehaviour:
   TrailCount: 10
   FastestSpeed: 2
   SlowestSpeed: 3
+  RefreshTime: 1
 --- !u!4 &1387647654
 Transform:
   m_ObjectHideFlags: 0
@@ -19357,10 +19358,10 @@ RectTransform:
   m_Father: {fileID: 112979670}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 365, y: -59.3}
-  m_SizeDelta: {x: 671, y: 199}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -195, y: -99.500015}
+  m_SizeDelta: {x: 390, y: 199}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1570820397
 MonoBehaviour:
@@ -19395,7 +19396,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 6ccde120368ef49ffbd6aecc35534360, type: 3}
-    m_FontSize: 30
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -19406,8 +19407,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'A #slowgame by Shedworks
+  m_Text: 'A #slowgame
 
+    by Shedworks
 
 
     @shedworksdan
@@ -27438,9 +27440,9 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 600, y: 800}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
