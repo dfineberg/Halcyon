@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 85b78e7576a584cadaa34aca95e9809a
+timeCreated: 1490609382
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Mr Robot
+  fontNames:
+  - Mr Robot
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

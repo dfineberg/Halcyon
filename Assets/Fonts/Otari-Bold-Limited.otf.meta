@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 65f2d8652752a4346b30e0cef6f8f990
+timeCreated: 1490609382
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Otari
+  fontNames:
+  - Otari
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
