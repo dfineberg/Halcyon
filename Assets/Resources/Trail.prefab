@@ -74,10 +74,10 @@ TrailRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Time: 20
+  m_Time: 60
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.15
+    widthMultiplier: 0.18
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -134,8 +134,8 @@ TrailRenderer:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    numCornerVertices: 15
-    numCapVertices: 20
+    numCornerVertices: 0
+    numCapVertices: 5
     alignment: 0
     textureMode: 0
   m_MinVertexDistance: 0.1

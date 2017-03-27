@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -11,8 +10,14 @@ public class TrailGroup : MonoBehaviour
 
     private EdgeCollider2D _edge;
     private Vector2[] _points;
+    private bool _stopped;
 
-    public void Init(Trail prefab, Vector3 startPos, int trailCount, float fastestSpeed, float slowestSpeed)
+    public Vector3[] Positions
+    {
+        get { return _trails == null ? null : _trails.Select(t => t.transform.position).ToArray(); }
+    }
+
+    public void Init(Trail prefab, Vector3 startPos, int trailCount, float fastestSpeed, float slowestSpeed, Vector3[] positions)
     {
         FollowPos = startPos;
 
@@ -23,27 +28,38 @@ public class TrailGroup : MonoBehaviour
 
         for (var i = 0; i < trailCount; i++)
         {
-            var trail = Instantiate(prefab, startPos, Quaternion.identity);
-            trail.Mover.Speed = fastestSpeed - stepDifference * i;
+            var trail = Instantiate(prefab, positions != null ? positions[i] : startPos, Quaternion.identity);
+            trail.Follow.Speed = fastestSpeed - stepDifference * i;
             trail.transform.SetParent(transform);
 
             _trails[i] = trail;
         }
 
         _trails[0].AddColliders();
+        _trails[0].TrailRenderer.numCornerVertices = 8;
+
         _trails.Last().AddColliders();
+        _trails.Last().TrailRenderer.numCornerVertices = 8;
 
         _edge = gameObject.AddComponent<EdgeCollider2D>();
         _points = new Vector2[trailCount];
     }
 
+    public void Stop()
+    {
+        _stopped = true;
+
+        foreach (var trail in _trails)
+            trail.Stop();
+    }
+
     private void Update()
     {
-        if (_trails == null)
+        if (_trails == null || _stopped)
             return;
 
         foreach (var trail in _trails)
-            trail.Mover.FollowPos = FollowPos;
+            trail.Follow.FollowPos = FollowPos;
 
         for (var i = 0; i < _trails.Length; i++)
             _points[i] = _trails[i].transform.localPosition;

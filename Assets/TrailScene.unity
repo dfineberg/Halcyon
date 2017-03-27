@@ -8632,9 +8632,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0fe2190f163470ba2caf6c4607854f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrailCount: 10
+  TrailCount: 8
   FastestSpeed: 2
   SlowestSpeed: 3
+  RefreshTime: 1
 --- !u!4 &1387647654
 Transform:
   m_ObjectHideFlags: 0
