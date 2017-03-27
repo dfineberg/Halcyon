@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d32473b31a68c48b8b13ea59ca9f3909
+timeCreated: 1490608407
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Lulo Clean
+  fontNames:
+  - Lulo Clean
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

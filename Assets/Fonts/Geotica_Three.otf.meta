@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e5cccf78f96e54e34b47456b9b643e07
+timeCreated: 1490608420
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Geotica Three
+  fontNames:
+  - Geotica Three
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
